@@ -48,7 +48,7 @@ gulp.task("clean", function (cb) {
 });
 
 gulp.task("build", ["clean"], function () {
-    gulp.start(["html", "styles:app",  "js", 'scripts:vendor']);
+    gulp.start(["html", "styles:app",  "js"]);
 });
 
 gulp.task("watch", ["build"], function () {

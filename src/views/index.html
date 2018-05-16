@@ -1,48 +1,26 @@
-<!-- @@master= components/master.tmpl.html {"title": "Task3"}-->
+<!-- @@master= components/master.tmpl.html {"title": "Task1"}-->
 
 <!-- @@block= content -->
 <div class="content-container">
     <div class="dominoe">
         <div class="dominoe-half domino-top">
-            <!--<div class="dominoe-part">-->
-                <!--<div class="dominoe-left"></div>-->
-                <!--<div class="dominoe-right"></div>-->
-            <!--</div>-->
-            <!--<div class="dominoe-part">-->
-                <!--<div class="dominoe-middle"></div>-->
 
-            <!--</div>-->
-            <!--<div class="dominoe-part">-->
-                <!--<div class="dominoe-left"></div>-->
-                <!--<div class="dominoe-right"></div>-->
-            <!--</div>-->
         </div>
         <div class="line"></div>
 
         <div class="dominoe-half domino-bottom">
-            <!--<div class="dominoe-part">-->
-                <!--<div class="dominoe-left"></div>-->
-                <!--<div class="dominoe-right"></div>-->
-            <!--</div>-->
-            <!--<div class="dominoe-part">-->
-                <!--<div class="dominoe-middle"></div>-->
 
-            <!--</div>-->
-            <!--<div class="dominoe-part">-->
-                <!--<div class="dominoe-left"></div>-->
-                <!--<div class="dominoe-right"></div>-->
-            <!--</div>-->
         </div>
 
     </div>
 
-   <div class="btn-container">
-       <div class="button-group">
-           <a class="btn rotateRight">Rotate left</a>
-           <a class="btn reset">Reset</a>
-           <a class="btn rotateLeft">Rotate right</a>
-       </div>
-   </div>
+    <div class="btn-container">
+        <div class="button-group">
+            <a class="btn" id="rotateLeft">Rotate left</a>
+            <a class="btn reset">Reset</a>
+            <a class="btn" id="rotateRight">Rotate right</a>
+        </div>
+    </div>
 
     <div class="slider-container">
         <p>Domino Size</p>
@@ -52,6 +30,86 @@
         <p>Domino rotation speed</p>
         <div class="range">
             <input type="range" min="0" max="10" value="0" class="slider rotate">
+        </div>
+    </div>
+</div>
+
+<div class="clone-elem" hidden>
+
+    <div class="zero">
+        <div class="dominoe-part"></div>
+        <div class="dominoe-part"></div>
+        <div class="dominoe-part"></div>
+    </div>
+
+    <div class="one">
+        <div class="dominoe-part"></div>
+        <div class="dominoe-part">
+            <div class="dominoe-middle"></div>
+        </div>
+        <div class="dominoe-part"></div>
+    </div>
+
+    <div class="two">
+        <div class="dominoe-part">
+            <div class="dominoe-left"></div>
+        </div>
+        <div class="dominoe-part"></div>
+        <div class="dominoe-part">
+            <div class="dominoe-right"></div>
+        </div>
+    </div>
+
+    <div class="three">
+        <div class="dominoe-part">
+            <div class="dominoe-left"></div>
+        </div>
+        <div class="dominoe-part">
+            <div class="dominoe-middle"></div>
+        </div>
+        <div class="dominoe-part">
+            <div class="dominoe-right"></div>
+        </div>
+    </div>
+
+    <div class="four">
+        <div class="dominoe-part">
+            <div class="dominoe-left"></div>
+            <div class="dominoe-right"></div>
+        </div>
+        <div class="dominoe-part"></div>
+        <div class="dominoe-part">
+            <div class="dominoe-left"></div>
+            <div class="dominoe-right"></div>
+        </div>
+    </div>
+
+    <div class="five">
+        <div class="dominoe-part">
+            <div class="dominoe-left"></div>
+            <div class="dominoe-right"></div>
+        </div>
+        <div class="dominoe-part">
+            <div class="dominoe-middle"></div>
+        </div>
+        <div class="dominoe-part">
+            <div class="dominoe-left"></div>
+            <div class="dominoe-right"></div>
+        </div>
+    </div>
+
+    <div class="six">
+        <div class="dominoe-part">
+            <div class="dominoe-left"></div>
+            <div class="dominoe-right"></div>
+        </div>
+        <div class="dominoe-part">
+            <div class="dominoe-left"></div>
+            <div class="dominoe-right"></div>
+        </div>
+        <div class="dominoe-part">
+            <div class="dominoe-left"></div>
+            <div class="dominoe-right"></div>
         </div>
     </div>
 </div>
